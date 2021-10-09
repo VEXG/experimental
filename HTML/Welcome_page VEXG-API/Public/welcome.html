@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>VEXG-API</title>
+	<link href="../CSS/style-welcome.css" rel="stylesheet">
+
+	<!-- For script -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+	<body id="intr" class="intro">
+		<!-- Ignore this >> <iframe style="display: none;" scrolling="no" allow="autoplay" src="https://c.top4top.io/m_2060x2tbh1.mp3" width="0" height="0" frameborder="no"></iframe> -->
+		<div style="visibility:hidden">
+			<audio autoplay loop id="aud_">
+				<source src="https://c.top4top.io/m_2060x2tbh1.mp3">
+			</audio>
+			<script>
+				var audio = document.getElementById("aud_");
+				audio.volume = 0.06;
+			</script>
+		</div>
+		<div class="welcome-title">
+			<h2>Welcome to VEXG-API</h2>
+		</div>
+		<div id="otr" class="outro"></div>
+		<div class="go-button">
+				<button class="btn"><b>DOCS</b></button>
+		</div>
+		<script>
+			$('button').click(function () {
+				$(".outro").addClass('animated');
+				setTimeout(function () {
+					$(".outro").removeClass('animated');
+				}, 1800)
+				setTimeout(function () {
+				window.location = "welcome.html"
+			}, 1760)
+			});
+		</script>
+		<script>
+			VANTA.NET({
+				el: "body",
+				mouseControls: true,
+				touchControls: true,
+				gyroControls: false,
+				minHeight: 300.00,
+				minWidth: 300.00,
+				scale: 1.00,
+				scaleMobile: 1.00,
+				color: 0x578fb3,
+				backgroundColor: 0xf1a41,
+				points: 13.00,
+				maxDistance: 25.00,
+				spacing: 18.00
+			})
+		</script>
+	</body>
+</html>
