@@ -17,7 +17,7 @@ def tebak_gambar():  # functions
             get_response.text, 'html.parser')  # parsing the HTML // memparsing HTML
 
         return {
-            'creator': 'VEXG/Helmi',  # please dont change this // jan di ganti yaak :v
+            'creator': 'VEXG/Helmi/Ikut Nge Weem bang|Zbin',  # please dont change this // jan di ganti yaak :v
             'result': {
                 # getting the image link // mendapatkan link foto
                 'image': str(get_soup.find('ul', id='images').li.a.img.get('src')),
