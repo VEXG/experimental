@@ -31,3 +31,10 @@ def tebak_gambar():  # functions
 
 # calling or print the functions // mengcall atau mengprint functions nya
 print(tebak_gambar())
+
+# what i learned from this experiment:
+# using requests and beautifulSoup
+# make a func
+# making a rand number
+# getting response code from web
+# try/except

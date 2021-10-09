@@ -17,3 +17,8 @@ else:  # if get_umur is interger type // jika get_umur itu typenya interger
     # formet() docs : https://www.w3schools.com/python/python_strings_format.asp
     print(f'Halo {get_nama.capitalize()}!')
     print(f'Umur kamu {str(get_umur)}')
+
+# what i learned from this experiment:
+# making a input for terminal
+# value type
+# format / f'' functions
