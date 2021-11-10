@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>VEXG-API</title>
-	<link href="../CSS/style-welcome.css" rel="stylesheet">
+	<link href="../CSS/style.css" rel="stylesheet">
 
 	<!-- For script -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
@@ -15,6 +15,7 @@
 </head>
 
 <body>
+
 	<body id="intr" class="intro">
 		<!-- Ignore this >> <iframe style="display: none;" scrolling="no" allow="autoplay" src="https://c.top4top.io/m_2060x2tbh1.mp3" width="0" height="0" frameborder="no"></iframe> -->
 		<div style="visibility:hidden">
@@ -31,17 +32,20 @@
 		</div>
 		<div id="otr" class="outro"></div>
 		<div class="go-button">
-				<button class="btn"><b>DOCS</b></button>
+			<button class="btn"><b>DOCS</b></button>
 		</div>
 		<script>
-			$('button').click(function () {
+			$('button').click(function ()
+			{
 				$(".outro").addClass('animated');
-				setTimeout(function () {
+				setTimeout(function ()
+				{
 					$(".outro").removeClass('animated');
 				}, 1800)
-				setTimeout(function () {
-				window.location = "welcome.html"
-			}, 1760)
+				setTimeout(function ()
+				{
+					window.location = "welcome.html"
+				}, 1760)
 			});
 		</script>
 		<script>
@@ -62,4 +66,5 @@
 			})
 		</script>
 	</body>
+
 </html>
