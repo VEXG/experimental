@@ -12,7 +12,6 @@ body {
 	background-color: #0f1a41;
 }
 
-/*intro screen*/
 .intro {
 	z-index: 100;
 	animation: fadeintro 1.8s cubic-bezier(0.3, 0.38, 0.28, 0.83);
@@ -28,7 +27,6 @@ body {
 	}
 }
 
-/*Outro screen*/
 .outro {
 	position: fixed;
 	height: 500vh;
@@ -37,8 +35,9 @@ body {
 	background: #0f1a41;
 	opacity: 0;
 }
+
 .outro.animated {
-	animation: fadeoutro 1.8s cubic-bezier( 0.69, 0, 0.63, 0.87 );
+	animation: fadeoutro 1.8s cubic-bezier(0.69, 0, 0.63, 0.87);
 }
 
 @keyframes fadeoutro {
@@ -48,12 +47,11 @@ body {
 	}
 
 	100% {
-		opacity:1;
+		opacity: 1;
 		z-index: 15;
 	}
 }
 
-/*Welcome title*/
 .welcome-title h2 {
 	color: #d6d9f1;
 	margin-top: 36vh;
@@ -65,7 +63,6 @@ body {
 	letter-spacing: 2px;
 }
 
-/*Docs button*/
 .go-button {
 	flex-direction: row;
 	justify-content: space-evenly;
@@ -98,7 +95,7 @@ body {
 }
 
 .btn:active {
-	transform: translateZ(100vh); 
+	transform: translateZ(100vh);
 	transition: 0.4s;
 }
 
@@ -112,7 +109,7 @@ body {
 	bottom: 0;
 
 	opacity: 0;
-	content: "";
+	content: '';
 	background-color: rgb(87, 143, 179);
 }
 
